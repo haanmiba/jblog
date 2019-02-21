@@ -1,7 +1,4 @@
 import click
-import re
-from datetime import datetime
-from configparser import ConfigParser
 import helper_functions as hf
 from config import Config
 
