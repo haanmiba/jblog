@@ -6,7 +6,8 @@ import helper_functions as hf
 from config import Config
 
 
-JEKYLL_BLOG_PATH = hf.get_jekyll_blog_path()
+SETTINGS_FILE_NAME = 'settings.cfg'
+JEKYLL_BLOG_PATH = hf.get_jekyll_blog_path(SETTINGS_FILE_NAME)
 DRAFTS_PATH = JEKYLL_BLOG_PATH + '/_drafts'
 POSTS_PATH = JEKYLL_BLOG_PATH + '/_posts'
 YAML_HEADER = '''---

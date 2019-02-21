@@ -3,9 +3,9 @@ import re
 from datetime import datetime
 from configparser import ConfigParser
 
-def get_jekyll_blog_path():
+def get_jekyll_blog_path(settings_file_path):
     config_parser = ConfigParser()
-    config_parser.read('settings.cfg')
+    config_parser.read(settings_file_path)
     return config_parser['jekyll']['project_directory']
 
 
